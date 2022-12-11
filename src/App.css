@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&family=Source+Sans+Pro:wght@400;600;700&display=swap');
+
+*{
+  font-family: 'Roboto', sans-serif;
+  font-size: 20px;
+}
+
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container{
+  top: 55%;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  margin: 0 auto;
+  width: 300px;
+  text-align: center;
+  border: 5px solid #000000 ;
+  background-color: black;
+  border-radius: 10px;
+
+
+}
+
+.keypad{
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  
+  
+}
+
+input[type="text"] {
+  height: 75px;
+  width: 292px;
+  color: #ffffff;
+  background-color: rgb(7, 6, 6);
+  border: 2px solid black ;
+  text-align: right;
+  font-size: 30px;
+  font-weight: 600;
+  letter-spacing: 1px;
+
+
+}
+ #clear {
+  grid-column: 1/3;
+  width: 133px;
+ }
+
+ 
+ #result{
+  grid-column:3/5;
+  width: 133px;
+ }
+
+ button{
+  height: 60px;
+  width: 60px;
+  margin: 5px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  background: #fcf6ee;
+  cursor: pointer;
+  
+ }
+
+ button:hover{
+  background: #e6d6c1;
+ }
+
+h1{
+  color: rgb(209, 212, 8);
+  font-size: 60px;
+    justify-content: center;
+  align-items: center;
+ text-shadow: 0 0 15px yellow, 0 0 25px yellow;
+ animation: animate 7.0s linear infinite;
+ 
+}
+
+@keyframes  animate {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    filter: hue-rotate(360deg);
+  }
+}
+
+.highlight{
+  background: #dabbe4;
+}
+
+.highlight:hover{
+  background: #c9a5d4;
+}
